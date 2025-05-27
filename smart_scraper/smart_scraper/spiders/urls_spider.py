@@ -5,7 +5,7 @@ from scrapy_playwright.page import PageMethod
 class UrlsSpider(scrapy.Spider):
     name = "urls_spider"
     # *=========*/URL of the product list page to scrape/*=========*
-    start_urls = ["https://www.championstore.com/fr_fr/outlet/outlet-femmes?_gl=1*18gy3jd*_up*MQ..*_ga*MjAzMjE3ODY0Mi4xNzQ1ODUxNjc0*_ga_QFNR51ZT9B*MTc0NTg1MTY3NC4xLjEuMTc0NTg1MTY5NS4wLjAuNzkzOTE2MTM3"]
+    start_urls = ["https://outlet.arcteryx.com/fr/fr/c/mens"]
     # *============================================================*
 
     custom_settings = {
@@ -86,7 +86,7 @@ class UrlsSpider(scrapy.Spider):
         # Extracting product detail URLs from product cards.
         # *==================*/ADAPT SELECTOR HERE/*===================*
         # detail_urls = response.css(".product-tile__link::attr(href)").getall()
-        detail_urls =  response.xpath("//li[contains(@class, 'product-item')]/a/@href").getall()
+        detail_urls =  response.xpath("//div[contains(@class, 'jqjaPi')]//a/@href").getall()
         # *============================================================*
         self.logger.info("URLs trouvées : %s", detail_urls)
         detail_urls = [response.urljoin(url) for url in detail_urls]
