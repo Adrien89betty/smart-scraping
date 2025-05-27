@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class IdsideScraperPipeline:
+class SmartScraperPipeline:
     def process_item(self, item, spider):
         return item
