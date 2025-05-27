@@ -1,0 +1,41 @@
+{
+  "base_urls": [
+      "https://www.calvinklein.fr/soutien-gorge-triangle-icon-lace-000qf7974eub1",
+      "https://www.calvinklein.fr/brassi%C3%A8re-embo%C3%AEtante-modern-cotton-000qf7060eub1",
+      "https://www.calvinklein.fr/soutien-gorge-balconnet-en-dentelle-000qf7909eub1"
+  ],
+  "brand_name": "Calvin Klein",
+  "brand_url": "https://www.calvinklein.fr/",
+  "vendor_name": "Calvin Klein",
+  "vendor_url": "https://www.calvinklein.fr/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "",
+    "offer_price": "//span[contains(@class, 'PriceDisplay_PriceDisplay__FIRRe')]/span[contains(@class, 'PriceDisplay_wasPrice__tC07y')]/text()",
+    "offer_image_url": "//div[contains(@class, 'ProductImages_ProductImages__AXMBs')]//div[contains(@class, 'Carousel_slide__3DZAW')]//picture/img/@src",
+    "discount_price": "//span[contains(@class, 'PriceDisplay_PriceDisplay__FIRRe')]/span[@data-testid='ProductHeaderPrice-PriceText']/text()",
+    "discount_percentage": "",
+    "product_description": "",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.calvinklein.fr/soldes-femmes"
+  },
+  "debug_mode": true
+}

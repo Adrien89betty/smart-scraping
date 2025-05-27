@@ -1,0 +1,74 @@
+{
+  "base_urls": [
+      "https://www2.hm.com/fr_fr/productpage.1243624006.html",
+      "https://www2.hm.com/fr_fr/productpage.1244644007.html",
+      "https://www2.hm.com/fr_fr/productpage.1253477001.html",
+      "https://www2.hm.com/fr_fr/productpage.1252431001.html",
+      "https://www2.hm.com/fr_fr/productpage.1197836006.html",
+      "https://www2.hm.com/fr_fr/productpage.1240959014.html",
+      "https://www2.hm.com/fr_fr/productpage.1021269004.html",
+      "https://www2.hm.com/fr_fr/productpage.1245541002.html",
+      "https://www2.hm.com/fr_fr/productpage.1244644004.html",
+      "https://www2.hm.com/fr_fr/productpage.1255161002.html",
+      "https://www2.hm.com/fr_fr/productpage.1253492001.html",
+      "https://www2.hm.com/fr_fr/productpage.1245541004.html",
+      "https://www2.hm.com/fr_fr/productpage.1252605001.html",
+      "https://www2.hm.com/fr_fr/productpage.1255161001.html",
+      "https://www2.hm.com/fr_fr/productpage.1253517001.html",
+      "https://www2.hm.com/fr_fr/productpage.1245503002.html",
+      "https://www2.hm.com/fr_fr/productpage.1252616003.html",
+      "https://www2.hm.com/fr_fr/productpage.1252608001.html",
+      "https://www2.hm.com/fr_fr/productpage.1233030001.html",
+      "https://www2.hm.com/fr_fr/productpage.1243624002.html",
+      "https://www2.hm.com/fr_fr/productpage.1240978002.html",
+      "https://www2.hm.com/fr_fr/productpage.1257981001.html",
+      "https://www2.hm.com/fr_fr/productpage.1224582002.html",
+      "https://www2.hm.com/fr_fr/productpage.1243206001.html",
+      "https://www2.hm.com/fr_fr/productpage.1254500002.html",
+      "https://www2.hm.com/fr_fr/productpage.1254498001.html",
+      "https://www2.hm.com/fr_fr/productpage.1197829006.html",
+      "https://www2.hm.com/fr_fr/productpage.1252608003.html",
+      "https://www2.hm.com/fr_fr/productpage.1237116001.html",
+      "https://www2.hm.com/fr_fr/productpage.1257450001.html",
+      "https://www2.hm.com/fr_fr/productpage.1252613002.html",
+      "https://www2.hm.com/fr_fr/productpage.1232198002.html",
+      "https://www2.hm.com/fr_fr/productpage.1252616004.html",
+      "https://www2.hm.com/fr_fr/productpage.1197829005.html",
+      "https://www2.hm.com/fr_fr/productpage.1220618001.html",
+      "https://www2.hm.com/fr_fr/productpage.1244644003.html"
+  ],
+  "brand_name": "H&M",
+  "brand_url": "https://www2.hm.com/fr_fr/index.html",
+  "vendor_name": "H&M",
+  "vendor_url": "https://www2.hm.com/fr_fr/index.html",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": ".ff0cbd h1::text",
+    "offer_price": ".e98f30::text",
+    "offer_image_url": ".b66c00 img::attr(src)",
+    "discount_price": ".c8e3aa.c8e3aa::text",
+    "discount_percentage": "",
+    "product_description": ".b39f93 p::text",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www2.hm.com/fr_fr/homme/last-chance/tout-afficher.html"
+  },
+  "debug_mode": true
+}

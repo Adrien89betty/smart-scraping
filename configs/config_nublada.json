@@ -1,0 +1,72 @@
+{
+  "base_urls": [
+      "https://nubladashop.com/collections/outlet/products/le-t-shirt-vibrant-lilac",
+      "https://nubladashop.com/collections/outlet/products/jogger-sweet-pink",
+      "https://nubladashop.com/collections/outlet/products/rib-flared-pants-muddy-grey-1",
+      "https://nubladashop.com/collections/outlet/products/sweater-oat-milk",
+      "https://nubladashop.com/collections/outlet/products/lift-top-aqua-aqua",
+      "https://nubladashop.com/collections/outlet/products/sweater-ruby-red",
+      "https://nubladashop.com/collections/outlet/products/sweat-short-american-beauty-red",
+      "https://nubladashop.com/collections/outlet/products/sweat-short-melted-butter-yellow",
+      "https://nubladashop.com/collections/outlet/products/shirt-sand-beige",
+      "https://nubladashop.com/collections/outlet/products/sunkiss-short-yellow-lemonade",
+      "https://nubladashop.com/collections/outlet/products/sweat-short-pool-blue",
+      "https://nubladashop.com/collections/outlet/products/straight-leg-jogger-oat-milk",
+      "https://nubladashop.com/collections/outlet/products/sunkiss-crop-top-yellow-lemonade-1",
+      "https://nubladashop.com/collections/outlet/products/rib-long-sleeve-oasis-green-1",
+      "https://nubladashop.com/collections/outlet/products/sunkiss-short-windsurfer-blue-1",
+      "https://nubladashop.com/collections/outlet/products/le-body-sandy-beige",
+      "https://nubladashop.com/collections/outlet/products/rib-flare-pants-oasis-green",
+      "https://nubladashop.com/collections/outlet/products/shell-dress-soft-beige",
+      "https://nubladashop.com/collections/outlet/products/sweat-short-pistacchio-green",
+      "https://nubladashop.com/collections/outlet/products/sunkiss-crop-top-windersurfer-blue",
+      "https://nubladashop.com/collections/outlet/products/pant-sand-beige",
+      "https://nubladashop.com/collections/outlet/products/straight-jogger-raspberry",
+      "https://nubladashop.com/collections/outlet/products/sweat-short-lilac",
+      "https://nubladashop.com/collections/outlet/products/safe-place-hoodie-true-navy",
+      "https://nubladashop.com/collections/outlet/products/sweat-short-coconut-milk-white",
+      "https://nubladashop.com/collections/outlet/products/shell-dress-iris-blue",
+      "https://nubladashop.com/collections/outlet/products/shirt-lovers-blue",
+      "https://nubladashop.com/collections/outlet/products/le-body-american-beauty-red",
+      "https://nubladashop.com/collections/outlet/products/le-t-shirt-summer-kaki",
+      "https://nubladashop.com/collections/outlet/products/pant-lovers-blue",
+      "https://nubladashop.com/collections/outlet/products/safe-place-hoodie-mushroom-beige",
+      "https://nubladashop.com/collections/outlet/products/soft-tank-lilac",
+      "https://nubladashop.com/collections/outlet/products/shell-dress-hot-pink-1",
+      "https://nubladashop.com/collections/outlet/products/sweater-cinnamon-brown"
+  ],
+  "brand_name": "Nublada",
+  "brand_url": "https://nubladashop.com/",
+  "vendor_name": "Nublada",
+  "vendor_url": "https://nubladashop.com/",
+  "currency": "EUR",
+  "gender": "Female",
+  "selectors": {
+    "product_name": "",
+    "offer_price": "//div[contains(@class, 'product__price')]//s[contains(@class, 'product__price--compare')]/text()",
+    "offer_image_url": "//div[contains(@class,'product-single__media-slide')]//a/@href",
+    "discount_price": "//div[contains(@class, 'product__price')]//span[contains(@class, 'product__price--sale')]/text()",
+    "discount_percentage": "",
+    "product_description": "",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://nubladashop.com/collections/outlet"
+  },
+  "debug_mode": true
+}

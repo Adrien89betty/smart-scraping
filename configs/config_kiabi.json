@@ -1,0 +1,39 @@
+{
+  "base_urls": [
+
+  ],
+  "brand_name": "Kiabi",
+  "brand_url": "https://www.kiabi.com/",
+  "vendor_name": "Kiabi",
+  "vendor_url": "https://www.kiabi.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": ".productDetails_productInfosLabelContainer__A9HsT h1::text",
+    "offer_price": ".productPrice_priceOverride__p_esO::text",
+    "offer_image_url": "::attr(src)",
+    "discount_price": "::text",
+    "discount_percentage": "",
+    "product_description": "::text",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.kiabi.com/promotions-femme_421880"
+  },
+  "debug_mode": true
+}

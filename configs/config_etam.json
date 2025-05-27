@@ -1,0 +1,68 @@
+{
+  "base_urls": [
+      "https://www.etam.com/p/t-shirt-manches-longues-654222005.html",
+      "https://www.etam.com/p/caraco-satine-details-dentelle-655079973.html",
+      "https://www.etam.com/p/soutien-gorge-n.9---balconnet-652397305.html",
+      "https://www.etam.com/p/string-en-tulle-brode-655178946.html",
+      "https://www.etam.com/p/nuisette-courte-voile-transparent-a-coeurs-655141505.html",
+      "https://www.etam.com/p/pantalon-coupe-carotte-654241225.html",
+      "https://www.etam.com/p/caraco-en-soie-details-dentelle-651534470.html",
+      "https://www.etam.com/p/poncho-polaire-655007680.html",
+      "https://www.etam.com/p/taie-d-oreiller-en-soie-50-x-70-cm-654987459.html",
+      "https://www.etam.com/p/string-en-broderie-fleurie-655101072.html",
+      "https://www.etam.com/p/brassiere-confort-optimal-en-coton%C2%A0-651559809.html",
+      "https://www.etam.com/p/soutien-gorge-n.2---le-push-up-plongeant-details-bijoux-655146773.html",
+      "https://www.etam.com/p/caraco-en-soie-details-dentelle-651534410.html",
+      "https://www.etam.com/p/tanga-en-dentelle-details-bijoux-655147273.html",
+      "https://www.etam.com/p/t-shirt-manches-longues-maille-thermique-653600505.html",
+      "https://www.etam.com/p/soutien-gorge-n.2---le-push-up-plongeant-fleurie-655178746.html",
+      "https://www.etam.com/p/chaussons-mules-ouvertes-653799880.html",
+      "https://www.etam.com/p/body-dentelle-fleuri-654741505.html",
+      "https://www.etam.com/p/soutien-gorge-corbeille-broderie-fleurie-655179146.html",
+      "https://www.etam.com/p/nuisette-courte-satinee-details-dentelle-655081573.html",
+      "https://www.etam.com/p/soutien-gorge-n.2---le-push-up-plongeant-details-bijoux-655146705.html",
+      "https://www.etam.com/p/t-shirt-manches-longues-maille-thermique-654176805.html",
+      "https://www.etam.com/p/soutien-gorge-push-up-balconnet-655106372.html",
+      "https://www.etam.com/p/nuisette-satinee-details-dentelle-bijou-coeur-655275473.html",
+      "https://www.etam.com/p/peignoir-polaire-654979980.html",
+      "https://www.etam.com/p/taie-d-oreiller-en-soie-50-x-70-cm-654987470.html",
+      "https://www.etam.com/p/short-de-pyjama-satine-details-broderie-655080073.html",
+      "https://www.etam.com/p/body-brode-details-bijoux-655146605.html",
+      "https://www.etam.com/p/pantalon-coupe-carotte-654241205.html",
+      "https://www.etam.com/p/soutien-gorge-push-up-balconnet-en-dentelle-et-satin-655060573.html"
+  ],
+  "brand_name": "Etam",
+  "brand_url": "https://www.etam.com/",
+  "vendor_name": "Etam",
+  "vendor_url": "https://www.etam.com/",
+  "currency": "EUR",
+  "gender": "Female",
+  "selectors": {
+    "product_name": ".productTopRegion__title::text",
+    "offer_price": ".productTopRegion__regularPrice::text",
+    "offer_image_url": "",
+    "discount_price": ".productTopRegion__discountedPrice::text",
+    "discount_percentage": "",
+    "product_description": "",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.etam.com/c/derniers-prix/"
+  },
+  "debug_mode": true
+}

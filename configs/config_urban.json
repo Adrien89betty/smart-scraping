@@ -1,0 +1,42 @@
+{
+  "base_urls": [
+      "https://www.urbanoutfitters.com/fr-fr/shop/bdg-stevie-aviator-coat3?category=sale-womens&color=004",
+      "https://www.urbanoutfitters.com/fr-fr/shop/iets-frans-applique-hooded-fleece?category=sale-womens&color=879",
+      "https://www.urbanoutfitters.com/fr-fr/shop/kimchi-blue-rose-pointelle-knit-cardigan?category=sale-womens&color=001",
+      "https://www.urbanoutfitters.com/fr-fr/shop/kimchi-blue-rose-pointelle-knit-cardigan2?category=sale-womens&color=012"
+  ],
+  "brand_name": "Urban Outfitters",
+  "brand_url": "https://www.urbanoutfitters.com/",
+  "vendor_name": "Urban Outfitters",
+  "vendor_url": "https://www.urbanoutfitters.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": ".c-pwa-product-meta-heading::text",
+    "offer_price": ".s-pwa-product-price__original::text",
+    "offer_image_url": ".o-pwa-image.has-pwa-aspect-ratio img::attr(src)",
+    "discount_price": ".s-pwa-product-price__current::text",
+    "discount_percentage": "",
+    "product_description": "",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.urbanoutfitters.com/fr-fr/sale-womens"
+  },
+  "debug_mode": true
+}

@@ -1,0 +1,46 @@
+{
+  "base_urls": [
+      "https://www.americanvintage-store.com/fr/fr/YAN18DH24-FLAMCH.html",
+      "https://www.americanvintage-store.com/fr/fr/YAN18DH24-FLAMCH.html",
+      "https://www.americanvintage-store.com/fr/fr/BYM18CH24-BOHORA.html",
+      "https://www.americanvintage-store.com/fr/fr/BYM18CH24-BOHORA.html",
+      "https://www.americanvintage-store.com/fr/fr/JAC51VH24-COQVIN.html",
+      "https://www.americanvintage-store.com/fr/fr/JAC51VH24-COQVIN.html",
+      "https://www.americanvintage-store.com/fr/fr/JAC52VE23-PASVIN.html",
+      "https://www.americanvintage-store.com/fr/fr/JAC52VE23-PASVIN.html"
+  ],
+  "brand_name": "American Vintage",
+  "brand_url": "https://www.americanvintage-store.com/",
+  "vendor_name": "American Vintage",
+  "vendor_url": "https://www.americanvintage-store.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "#amv-pdp .pdp-product-name::text",
+    "offer_price": "#amv-pdp .pdp-salesprice::text",
+    "offer_image_url": "#amv-pdp .pdp-left .pdp-thumbnails .thumbnail img::attr(src)",
+    "discount_price": "#amv-pdp .pdp-actualprice::text",
+    "discount_percentage": "#amv-pdp .pdp-promo::text",
+    "product_description": "#amv-pdp .pdp-section.pdp-section-collapsable .pdp-text p::text",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.americanvintage-store.com/"
+  },
+  "debug_mode": true
+}

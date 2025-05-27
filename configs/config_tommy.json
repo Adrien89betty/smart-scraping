@@ -1,0 +1,41 @@
+{
+  "base_urls": [
+      "https://fr.tommy.com/bomber-d%C3%A9contract%C3%A9-matelass%C3%A9-de-duvet-ww0ww44342msh",
+      "https://fr.tommy.com/bomber-d%C3%A9contract%C3%A9-matelass%C3%A9-de-duvet-ww0ww44342bds",
+      "https://fr.tommy.com/coupe-vent-tommy-badge-dw0dw20672c3q"
+  ],
+  "brand_name": "Tommy Hilfiger",
+  "brand_url": "https://fr.tommy.com/",
+  "vendor_name": "Tommy Hilfiger",
+  "vendor_url": "https://fr.tommy.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "",
+    "offer_price": "//div[contains(@class, 'ProductHeader_ProductHeader__NqfkI')]//span[contains(@class, 'PriceDisplay_wasPrice__tC07y')]/text()",
+    "offer_image_url": "//div[contains(@class, 'ProductImages_ProductImages__AXMBs')]//div[contains(@class, 'Carousel_slide__3DZAW')]//picture/img/@src",
+    "discount_price": "//div[contains(@class, 'ProductHeader_ProductHeader__NqfkI')]//span[contains(@class, 'ProductHeaderPrice-PriceText')]/text()",
+    "discount_percentage": "",
+    "product_description": "",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://fr.tommy.com/soldes-femme?cmpid=ch:cpc%7Cso:google%7Cca:tommy%20hilfiger%7Ccr:618197742697%7Clb:27224924%7Cag:20100379516%7Cpi:kwd-14917630&&utm_source=google&utm_medium=cpc&utm_campaign=27224924&utm_id=27224924&utm_term=tommy%20hilfiger&utm_content=20100379516&utm_source_platform=g&gad_source=1&gbraid=0AAAAAD6hrvSld_Fiv7dyj-FWXYI6OEUzV&gclid=CjwKCAjwq7fABhB2EiwAwk-YbFd8n52OfQxhrusSz9olQjS01OC_bmZ4EIEtFKCR4K77e0tIJSXlgRoC22AQAvD_BwE&gclsrc=aw.ds"
+  },
+  "debug_mode": true
+}

@@ -1,0 +1,41 @@
+{
+  "base_urls": [
+      "https://www.everlane.com/products/womens-form-crewneck-tank-black?collection=womens-sale",
+      "https://www.everlane.com/products/womens-crinkle-pant-black?collection=womens-sale",
+      "https://www.everlane.com/products/womens-relaxed-chino-black?collection=womens-sale"
+  ],
+  "brand_name": "Everlane",
+  "brand_url": "https://www.everlane.com/",
+  "vendor_name": "Everlane",
+  "vendor_url": "https://www.everlane.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "//div[contains(@class, 'styles_product-header__title__Bao8o')]/p/text()",
+    "offer_price": "//div[contains(@class, 'styles_product-header__price--cwyp-original__S2s3m')]/text()",
+    "offer_image_url": "//div[contains(@class,'styles_product-gallery__in-view__k_EEB')]//img/@src",
+    "discount_price": "//div[contains(@class, 'styles_product-header__price--cwyp-discount__n8oVY')]/span/text()",
+    "discount_percentage": "",
+    "product_description": "//div[contains(@class, 'styles_product-details__content__4sjXW')]//meta[itemprop='description']/@content",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.everlane.com/collections/womens-sale"
+  },
+  "debug_mode": true
+}

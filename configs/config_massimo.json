@@ -1,0 +1,41 @@
+{
+  "base_urls": [
+      "https://www.massimodutti.com/fr/robe-midi-satinee-fluide-l06691595?pelement=48845218",
+      "https://www.massimodutti.com/fr/robe-midi-fluide-satinee-l06659584?pelement=47185707",
+      "https://www.massimodutti.com/fr/robe-midi-froncee-lin-melange-l06649589?pelement=46770956"
+  ],
+  "brand_name": "Massimo Dutti",
+  "brand_url": "https://www.massimodutti.com/",
+  "vendor_name": "Massimo Dutti",
+  "vendor_url": "https://www.massimodutti.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "//div[@id='productName']/h1/text()",
+    "offer_price": "//div[contains(@class, 'product-price')]//div[contains(@class, 'is-through')]/text()",
+    "offer_image_url": "//product-media-skeleton[contains(@class, 'product-media__container')]//div[contains(@class, 'media-image')]//img/@src",
+    "discount_price": "//div[contains(@class, 'd-price-special')]//formatted-price-detail/div/text()",
+    "discount_percentage": "",
+    "product_description": "//div[contains(@class, 'product-info-detail')]//div[contains(@class, 'toggle-pdp-description')]/p/text()",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.massimodutti.com/fr/femme/prix-speciaux-n1486"
+  },
+  "debug_mode": true
+}

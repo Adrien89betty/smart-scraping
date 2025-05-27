@@ -1,0 +1,41 @@
+{
+  "base_urls": [
+      "https://www.levi.com/FR/fr_FR/vetements/homme/jeans/droits/levis-made-in-japan-jean-501-1980/p/A58750008",
+      "https://www.levi.com/FR/fr_FR/vetements/homme/jeans/droits/jean-501-levis-original/p/005013593",
+      "https://www.levi.com/FR/fr_FR/vetements/homme/jeans/droits/levis-for-paris-jean-501-levis-original/p/005013541"
+  ],
+  "brand_name": "Levi's",
+  "brand_url": "https://www.levi.com/",
+  "vendor_name": "Levi's",
+  "vendor_url": "https://www.levi.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "",
+    "offer_price": "//div[contains(@class, 'price-container')]//span[contains(@class, 'price.strikedOut')]/text()",
+    "offer_image_url": "",
+    "discount_price": "//div[contains(@class, 'price-container')]/span[contains(@class, 'hard-sale')]/text()",
+    "discount_percentage": "",
+    "product_description": "",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.levi.com/FR/fr_FR/offres-speciales/c/levi_men_special_offers_south"
+  },
+  "debug_mode": true
+}

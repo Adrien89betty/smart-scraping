@@ -1,0 +1,58 @@
+{
+  "base_urls": [
+      "https://www.jennyfer.com/products/veste-blazer-creme-10048063012",
+      "https://www.jennyfer.com/products/sweatshirt-a-capuche-beige-kaki-10046078026",
+      "https://www.jennyfer.com/products/chemise-oversize-manches-courtes-noire-10048266060",
+      "https://www.jennyfer.com/products/robe-vichy-courte-jaune-et-noir-10048258071",
+      "https://www.jennyfer.com/products/jean-baggy-taille-basse-gris-moyen-10048161056",
+      "https://www.jennyfer.com/products/sweat-a-capuche-noir-10041295060",
+      "https://www.jennyfer.com/products/robe-vichy-courte-noir-et-blanc-10048253069",
+      "https://www.jennyfer.com/products/jean-wide-leg-taille-medium-gris-moyen-10047552056",
+      "https://www.jennyfer.com/products/pantalon-evase-avec-taille-retroussee-beige-kaki-10045349026",
+      "https://www.jennyfer.com/products/pantalon-cargo-en-lin-gris-fonce-10048197063",
+      "https://www.jennyfer.com/products/jean-maxi-wide-leg-taille-basse-noir-10048305060",
+      "https://www.jennyfer.com/products/veste-trench-verte-clair-10046252031",
+      "https://www.jennyfer.com/products/veste-blazer-zippee-10048003060",
+      "https://www.jennyfer.com/products/jean-straight-bleu-jean-10046085013",
+      "https://www.jennyfer.com/products/jean-coupe-slim-mom-bleu-10043930013",
+      "https://www.jennyfer.com/products/impermeable-vert-clair-10048059031",
+      "https://www.jennyfer.com/products/t-shirt-hot-wheels-x-jennyfer-noir-10048468060",
+      "https://www.jennyfer.com/products/pantalon-tailleur-matiere-lin-blanc-casse-10048195007",
+      "https://www.jennyfer.com/products/top-polo-cotele-noir-10048807060",
+      "https://www.jennyfer.com/products/sweatshirt-a-capuche-marron-fonce-10046078074"
+  ],
+  "brand_name": "Jennyfer",
+  "brand_url": "https://www.jennyfer.com/",
+  "vendor_name": "Jennyfer",
+  "vendor_url": "https://www.jennyfer.com/",
+  "currency": "EUR",
+  "gender": "Female",
+  "selectors": {
+    "product_name": "//span[contains(@class,'product-heading-title')]/text()",
+    "offer_price": "//s[contains(@class,'price-item--regular')]/text()",
+    "offer_image_url": "//div[contains(@class, 'swiper-slide')]/div[contains(@class, 'product-gallery-item')]/img/@src",
+    "discount_price": "//span[contains(@class,'price-item--sale')]/text()",
+    "discount_percentage": "",
+    "product_description": "//div[contains(@class,'main-product-description__content')]/text()",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.jennyfer.com/collections/promo"
+  },
+  "debug_mode": true
+}

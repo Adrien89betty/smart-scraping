@@ -1,0 +1,41 @@
+{
+  "base_urls": [
+      "https://www.pullandbear.com/fr/jean-balloon-mid-rise-l03687316?cS=427&pelement=662014539",
+      "https://www.pullandbear.com/fr/gilet-de-tailleur-boutons-l07771322?cS=800&pelement=662026975",
+      "https://www.pullandbear.com/fr/jean-balloon-mid-rise-l03687316?cS=802&pelement=662014540"
+  ],
+  "brand_name": "Pull & Bear",
+  "brand_url": "https://www.pullandbear.com/",
+  "vendor_name": "Pull & Bear",
+  "vendor_url": "https://www.pullandbear.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "",
+    "offer_price": "//div[contains(@class, 'prices')]//div[contains(@class, 'price-old')]/span/text()",
+    "offer_image_url": "//li[starts-with(@id,'pdp-image-main')]//img/@src",
+    "discount_price": "//div[contains(@class, 'prices')]//div[contains(@class, 'sale')]/span/text()",
+    "discount_percentage": "",
+    "product_description": "",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.pullandbear.com/fr/femme/promotions-n6492"
+  },
+  "debug_mode": true
+}

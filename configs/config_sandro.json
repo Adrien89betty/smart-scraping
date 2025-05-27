@@ -1,0 +1,70 @@
+{
+  "base_urls": [
+      "https://fr.sandro-paris.com/fr/p/polo-en-maille-fine/SHPTR00486_20.html",
+      "https://fr.sandro-paris.com/fr/p/cardigan-detail-fleur/SHPTR00584_D340.html",
+      "https://fr.sandro-paris.com/fr/p/pantalon-de-costume/SHPPA01343_44.html",
+      "https://fr.sandro-paris.com/fr/p/chemise-fluide-imprime-square-cross/SHPCM01170_44.html",
+      "https://fr.sandro-paris.com/fr/p/sneakers-basses/SHACH01052_10.html",
+      "https://fr.sandro-paris.com/fr/p/surchemise-double-face/SHPBL00972_44.html",
+      "https://fr.sandro-paris.com/fr/p/sweatshirt-molletonne-a-capuche/SHPSW00503_20.html",
+      "https://fr.sandro-paris.com/fr/p/veste-de-costume-croisee/SHPVE01015_44.html",
+      "https://fr.sandro-paris.com/fr/p/blouson-en-coton/SHPBL00785_20.html",
+      "https://fr.sandro-paris.com/fr/p/sneakers-basses-en-cuir/SHACH01150_44.html",
+      "https://fr.sandro-paris.com/fr/p/veste-de-costume/SHPVE00927_72.html",
+      "https://fr.sandro-paris.com/fr/p/veste-de-costume-croisee-/SHPVE00939_44.html",
+      "https://fr.sandro-paris.com/fr/p/chemise-fluide-square-cross/SHPCM01169_40.html",
+      "https://fr.sandro-paris.com/fr/p/veste-de-costume-croisee/SHPVE01013_44.html",
+      "https://fr.sandro-paris.com/fr/p/veste-worker/SHPBL00993_44.html",
+      "https://fr.sandro-paris.com/fr/p/coupe-vent-a-capuche/SHPBL00903_20.html",
+      "https://fr.sandro-paris.com/fr/p/pantalon-de-costume-large/SHPPA01461_24.html",
+      "https://fr.sandro-paris.com/fr/p/sweatshirt-homme-en-coton-biologique/SHPSW00676_21.html",
+      "https://fr.sandro-paris.com/fr/p/sneakers-basses-en-cuir/SHACH01150_20.html",
+      "https://fr.sandro-paris.com/fr/p/veste-survetement/SHPSW00666_125.html",
+      "https://fr.sandro-paris.com/fr/p/veste-de-costume/SHPVE01010_24.html",
+      "https://fr.sandro-paris.com/fr/p/parka-en-laine-a-capuche/SHPMA00368_44.html",
+      "https://fr.sandro-paris.com/fr/p/impermeable-mac-en-tissu-technique-/SHPMA00349_16.html",
+      "https://fr.sandro-paris.com/fr/p/grand-briefcase-en-nylon/SHASA01295_20.html",
+      "https://fr.sandro-paris.com/fr/p/briefcase-en-cuir-reconstitue/SHASA01193_751.html",
+      "https://fr.sandro-paris.com/fr/p/petit-sac-en-cuir-reconstitue/SHASA01148_125.html",
+      "https://fr.sandro-paris.com/fr/p/pantalon-a-plis-creux/SHPPA01456_44.html",
+      "https://fr.sandro-paris.com/fr/p/t-shirt-a-manches-courtes/SHPTS01497_21.html",
+      "https://fr.sandro-paris.com/fr/p/pantalon-large-en-laine/SHPPA01504_20.html",
+      "https://fr.sandro-paris.com/fr/p/sweatshirt-homme-en-coton-biologique/SHPSW00458_10.html",
+      "https://fr.sandro-paris.com/fr/p/doudoune-oversize/SHPMA00313_20.html",
+      "https://fr.sandro-paris.com/fr/p/blouson-zippe/SHPBL01028_D339.html"
+  ],
+  "brand_name": "Sandro",
+  "brand_url": "https://fr.sandro-paris.com/",
+  "vendor_name": "Sandro",
+  "vendor_url": "https://fr.sandro-paris.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "",
+    "offer_price": ".strike-through .value::attr(content)",
+    "offer_image_url": ".image-content.image-zoom.position-relative img::attr(src)",
+    "discount_price": ".sales .value::attr(content)",
+    "discount_percentage": "",
+    "product_description": "",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://fr.sandro-paris.com/fr/last-chance/homme/"
+  },
+  "debug_mode": true
+}

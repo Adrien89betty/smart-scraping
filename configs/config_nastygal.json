@@ -1,0 +1,42 @@
+{
+  "base_urls": [
+    "https://www.nastygal.com/fr/petite---mini-robe-satinee-a-col-v/BGG12939.html?color=105",
+    "https://www.nastygal.com/fr/robe-mi-longue-fendue-decolletee/BGG10995.html?color=105",
+    "https://www.nastygal.com/fr/robe-moulante-a-sequins-imprime-celeste/BGG11838.html",
+    "https://www.nastygal.com/fr/mini-robe-en-simili-a-bretelles/BGG17649.html?color=105"
+  ],
+  "brand_name": "Nasty Gal",
+  "brand_url": "https://www.nastygal.com/fr/",
+  "vendor_name": "Nasty Gal",
+  "vendor_url": "https://www.nastygal.com/fr/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": ".b-product_details-name::text",
+    "offer_price": ".b-price-item.m-old::text",
+    "offer_image_url": ".b-product_image img::attr(src)",
+    "discount_price": ".b-price-item.m-new::text",
+    "discount_percentage": "",
+    "product_description": ".b-product_details-content p::text",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.nastygal.com/fr/femme/promo2"
+  },
+  "debug_mode": true
+}

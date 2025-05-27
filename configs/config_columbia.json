@@ -1,0 +1,44 @@
+{
+  "base_urls": [
+      "https://www.columbiasportswear.fr/FR/p/chaussure-de-randonnee-mid-peakfreak-ii-outdry-femme-2100091.html?dwvar_2100091_color=010",
+      "https://www.columbiasportswear.fr/FR/p/pantalon-de-ski-impermeable-cirque-bowl-femme-602-m-r-195981024753.html?dwvar_195981024753_color=602",
+      "https://www.columbiasportswear.fr/FR/p/bonnet-pompon-a-maille-torsadee-boundless-days-unisexe-2092641.html?dwvar_2092641_color=581",
+      "https://www.columbiasportswear.fr/FR/p/chaussure-de-randonnee-facet-75-ii-outdry-femme-2100121.html?dwvar_2100121_color=466",
+      "https://www.columbiasportswear.fr/FR/p/gants-de-ski-impermeables-powbound-femme-2097051.html?dwvar_2097051_color=602",
+      "https://www.columbiasportswear.fr/FR/p/veste-en-duvet-a-capuche-harmony-falls-femme-2085372.html?dwvar_2085372_color=609"
+  ],
+  "brand_name": "Columbia",
+  "brand_url": "https://www.columbiasportswear.fr/",
+  "vendor_name": "Columbia",
+  "vendor_url": "https://www.columbiasportswear.fr/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "",
+    "offer_price": "//div[contains(@class, 'price')]//span[contains(@class, 'strike-through')]//span[@itemprop='price']/text()",
+    "offer_image_url": "//div[contains(@class, 'product-gallery')]//li[contains(@class, 'swiper-slide')]//img/@src",
+    "discount_price": "//div[contains(@class, 'price')]//span[contains(@class, 'sales')]//span[@itemprop='price']/text()",
+    "discount_percentage": "",
+    "product_description": "",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.columbiasportswear.fr/FR/c/bonnes-affaires-femme?icpa=grid&icid=hdrbn&icsa=ALL&prid=mwkf&icst=visnav&crid=women&icca=btn"
+  },
+  "debug_mode": true
+}

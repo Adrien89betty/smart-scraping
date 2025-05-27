@@ -1,0 +1,62 @@
+{
+  "base_urls": [
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-coupe-vent-kikash-pour-femme-NF0A8A13?color=QLI",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/parka-brooklyn-pour-femme-NF0A4M8X?color=4H0",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-a-capuche-kalix-pour-femme-NF0A88SJ?color=JK3",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/t-shirt-reaxion-amp-pour-femme-NF00CE0T?color=KS7",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/sweat-a-capuche-new-peak-pour-femme-NF00CSV9?color=QEO",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-a-capuche-stratos-pour-femme-NF00CMJ0?color=DSB",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/parka-nuptse-pour-femme-NF0A832K?color=4H0",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/legging-court-flex-pour-femme-NF0A87JU?color=JK3",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-en-duvet-massif-pour-femme-NF0A3Y1A?color=QLI",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-isolante-himalayan-pour-femme-NF0A4R35?color=JK3",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/parka-dryvent-mono-triclimate-3-en-1-pour-femme-NF0A88T9?color=JK3",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-1992-nuptse-reversible-pour-femme-NF0A831J?color=KOK",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/legging-sport-pour-femme-NF0A3Y2F?color=MN8",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/parka-dryvent-mono-triclimate-3-en-1-pour-femme-NF0A88T9?color=4OJ",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/parka-en-duvet-tnf-range-pour-femme-NF0A89VN?color=JK3",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-descendit-pour-femme-NF0A87XF?color=FN4",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/gilet-en-duvet-massif-pour-femme-NF0A3Y19?color=QLI",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-polaire-zippee-linux-pour-femme-NF0A5IL7?color=7B5",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-rembourree-convertible-2-en-1-pour-femme-NF0A89GX?color=173",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-isolante-limbara-pour-femme-NF0A89G9?color=QLI",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-a-capuche-stratos-pour-femme-NF00CMJ0?color=COF",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-coupe-vent-kikash-pour-femme-NF0A8A13?color=1NO",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-isolante-freedom-pour-femme-NF0A7WYK?color=51O",
+      "https://www.thenorthface.fr/fr-fr/p/femme-211718/veste-gotham-pour-femme-NF0A84IW?color=1NI"
+  ],
+  "brand_name": "The North Face",
+  "brand_url": "https://www.thenorthface.fr/",
+  "vendor_name": "The North Face",
+  "vendor_url": "https://www.thenorthface.fr/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "//h1[@data-test-id='product-name']/text()",
+    "offer_price": "//del[contains(@class, 'c-grey-20')]/text()",
+    "offer_image_url": "//div[@data-test-id='vf-media-gallery']//picture[contains(@class, 'w-full')]/img/@src",
+    "discount_price": "//ins[contains(@class, 'c-red-30')]/text()",
+    "discount_percentage": "",
+    "product_description": "//div[@id='productText']//p[contains(@class, 'ws-pre-wrap')]/text()",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.thenorthface.fr/fr-fr/c/outlet/outlet-femme-550273"
+  },
+  "debug_mode": true
+}

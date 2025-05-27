@@ -1,0 +1,75 @@
+{
+  "base_urls": [
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/combinaison/combinaison-bi-matiere_87034065",
+    "https://shop.mango.com/fr/fr/p/homme/blazers/costume/veste-de-costume-monaco-croisee-slim-fit_87060627",
+    "https://shop.mango.com/fr/fr/p/femme/jean/mom/jean-mom2000-mom-taille-haute_87010241",
+    "https://shop.mango.com/fr/fr/p/homme/gilets-et-pull-overs/pulls-overs/pull-over-coton-maille-cotelee_87010610?c=08",
+    "https://shop.mango.com/fr/fr/p/homme/sweat/sans-capuche/sweat-shirt-polo-detail-brode_87090614",
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/robes/robe-epaules-denudees-en-tissu-combine_87034802",
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/robes/robe-a-ceinture-tissu-combine_87054803",
+    "https://shop.mango.com/fr/fr/p/homme/gilets-et-pull-overs/pulls-overs/pull-over-coton-maille-cotelee_87010610?c=02",
+    "https://shop.mango.com/fr/fr/p/femme/pulls-et-cardigans/cardigan/veste-maille-details-ajoures_87014095?c=05",
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/robes/robe-midi-imprime-a-rayures_87044093",
+    "https://shop.mango.com/fr/fr/p/homme/jeans/droit/jean-effet-use-straight-fit_87000599?l=01",
+    "https://shop.mango.com/fr/fr/p/homme/pantalons/costume/pantalon-costume-pari-super-slim-fit_87040624",
+    "https://shop.mango.com/fr/fr/p/homme/surchemises/blouson-laine-regular-fit_87010582",
+    "https://shop.mango.com/fr/fr/p/femme/manteau/manteau/manteau-midi-laine-boutons_87000642",
+    "https://shop.mango.com/fr/fr/p/homme/vestes/vestes/veste-matelassee-rembourrage-duvet-et-plumes_87010588",
+    "https://shop.mango.com/fr/fr/p/femme/t-shirts/manches-courtes/t-shirt-coton-col-en-v_87010436",
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/robes/robe-maille-ouverture_87060425",
+    "https://shop.mango.com/fr/fr/p/femme/chemises-et-blouses/chemise/chemise-droite-rayures_87024806",
+    "https://shop.mango.com/fr/fr/p/homme/pantalons/regular-fit/pantalon-twill-coton-pinces_77017929",
+    "https://shop.mango.com/fr/fr/p/homme/vestes/bombers/blouson-bomber-coton-contrastant_87000598",
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/robes/robe-volants-en-imprime-animal_87030621",
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/robes/robe-maille-col-montant_87070425",
+    "https://shop.mango.com/fr/fr/p/homme/pantalons/regular-fit/pantalon-coton-cordon-regular-fit_87060575?c=05",
+    "https://shop.mango.com/fr/fr/p/femme/vestes/en-jean/blouson-double-face-imitation-mouton-retourne_87080637",
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/robes/robe-florale-manches-bouffantes_87080642",
+    "https://shop.mango.com/fr/fr/p/femme/jupe/longue/jupe-en-jean-bas-effiloche_77080586",
+    "https://shop.mango.com/fr/fr/p/homme/t-shirts/regular-fit/t-shirt-100-coton-rayures_87080614?c=78",
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/robes/robe-maille-bords-coteles_87050283?c=09",
+    "https://shop.mango.com/fr/fr/p/homme/surchemises/surchemise-100-coton-popeline_77020566",
+    "https://shop.mango.com/fr/fr/p/femme/chaussure/chaussure-plate/ballerines-vernies-laniere_87081048",
+    "https://shop.mango.com/fr/fr/p/femme/sac/sac-porte-epaule-ovale_87052537?c=35",
+    "https://shop.mango.com/fr/fr/p/homme/manteaux/manteaux/manteau-laine-interieur-matelasse_87020581?c=35",
+    "https://shop.mango.com/fr/fr/p/homme/chemises/regular-fit/chemise-regular-fit-coton-seersucker-rayures_77062536",
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/robes/robe-courte-maille-col-roule_87040284?c=05",
+    "https://shop.mango.com/fr/fr/p/femme/manteau/manteau/manteau-court-laine-vierge_87040652",
+    "https://shop.mango.com/fr/fr/p/femme/robes-et-combinaisons/robes/robe-maille-ouverture_87060425?c=37",
+    "https://shop.mango.com/fr/fr/p/femme/pulls-et-cardigans/pull/pull-over-rayures-col-polo_87040356?c=70"
+  ],
+  "brand_name": "Mango",
+  "brand_url": "https://shop.mango.com/",
+  "vendor_name": "Mango",
+  "vendor_url": "https://shop.mango.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": ".ProductDetail_pdp__WwWDn .ProductDetail_title___WrC_::text",
+    "offer_price": ".SinglePrice_crossed__BjBEu::text",
+    "offer_image_url": ".Gallery_gallery__VDgZ8 img::attr(src)",
+    "discount_price": ".SinglePrice_finalPrice__CGsuZ::text",
+    "discount_percentage": ".DiscountRate_discountRate__vUlp2 span::text",
+    "product_description": ".TruncateText_textContainer__b_kf_ p::text",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://shop.mango.com/fr/fr/h/femme"
+  },
+  "debug_mode": true
+}

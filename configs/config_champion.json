@@ -1,0 +1,43 @@
+{
+  "base_urls": [
+      "https://www.championstore.com/fr_fr/santa-cruz-print-cotton-t-shirt-peach-ss24?champ_color=16802",
+      "https://www.championstore.com/fr_fr/xs-duffle-bag-lime-green-fw24?champ_color=16799",
+      "https://www.championstore.com/fr_fr/womens-turbo-500-low-cut-trainers-wheat-ss25?champ_color=16829",
+      "https://www.championstore.com/fr_fr/crewneck-sweater-off-white-fw24?champ_color=16757",
+      "https://www.championstore.com/fr_fr/small-duffle-bag-black-fw24?champ_color=16694"
+  ],
+  "brand_name": "Champion",
+  "brand_url": "https://www.championstore.com/",
+  "vendor_name": "Champion",
+  "vendor_url": "https://www.championstore.com/",
+  "currency": "EUR",
+  "gender": "",
+  "selectors": {
+    "product_name": "",
+    "offer_price": "//div[contains(@class, 'product-info-price')]//span[contains(@class, 'old-price')]//span[contains(@class, 'price-wrapper')]/span[contains(@class, 'price')]/text()",
+    "offer_image_url": "//div[contains(@class, 'gallery__images')]//img/@src",
+    "discount_price": "//div[contains(@class, 'product-info-price')]//span[contains(@class, 'normal-price')]//span[contains(@class, 'price-wrapper')]/span[contains(@class, 'price')]/text()",
+    "discount_percentage": "",
+    "product_description": "",
+    "vendor_icon_url": "",
+    "tags": ""
+  },
+  "pagination": {
+    "enabled": false,
+    "selector": ""
+  },
+  "anti_bot": {
+    "use_playwright": true,
+    "delay": 5
+  },
+  "scroll": {
+    "enabled": true,
+    "times": 3,
+    "delay": 2
+  },
+  "headers": {
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Referer": "https://www.championstore.com/fr_fr/outlet/outlet-femmes?_gl=1*18gy3jd*_up*MQ..*_ga*MjAzMjE3ODY0Mi4xNzQ1ODUxNjc0*_ga_QFNR51ZT9B*MTc0NTg1MTY3NC4xLjEuMTc0NTg1MTY5NS4wLjAuNzkzOTE2MTM3"
+  },
+  "debug_mode": true
+}
