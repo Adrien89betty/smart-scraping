@@ -2,14 +2,14 @@ import scrapy
 import json
 import os
 from scrapy.loader import ItemLoader
-from idside_scraper.items import ProductItem, ProductLoader
-from idside_scraper.items import compute_discount_percentage
+from smart_scraper.items import ProductItem, ProductLoader
+from smart_scraper.items import compute_discount_percentage
 from itemloaders.processors import MapCompose
 from scrapy_playwright.page import PageMethod
-from idside_scraper.utils.config_loader import load_config
-from idside_scraper.utils.jsonld_getter import extract_jsonld_data
-from idside_scraper.utils.jsonld_getter import check_for_default_value
-from idside_scraper.utils.jsonld_getter import fetch_jsonld_data
+from smart_scraper.utils.config_loader import load_config
+from smart_scraper.utils.jsonld_getter import extract_jsonld_data
+from smart_scraper.utils.jsonld_getter import check_for_default_value
+from smart_scraper.utils.jsonld_getter import fetch_jsonld_data
 
 class MainSpider(scrapy.Spider):
     name = "main_spider"
