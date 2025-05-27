@@ -1,5 +1,5 @@
-# IDSide Scraper
-IDSide Scraper is a modular web scraping project built with [Scrapy](https://docs.scrapy.org/en/latest/) and [Scrapy-Playwright](https://github.com/scrapy-plugins/scrapy-playwright). It is designed to extract product data from e-commerce websites and is configurable via JSON files validated with [Pydantic](https://docs.pydantic.dev/latest/). It consists of a main spider that extracts detailed product data and an auxiliary spider that extracts product details URLs from a products collection page. In addition, a utility script is provided to convert JSON objects from the spider's output into a Python List of URLs suitable for the JSON config files.
+# Smart Scraper
+Smart Scraper is a modular web scraping project built with [Scrapy](https://docs.scrapy.org/en/latest/) and [Scrapy-Playwright](https://github.com/scrapy-plugins/scrapy-playwright). It is designed to extract product data from e-commerce websites and is configurable via JSON files validated with [Pydantic](https://docs.pydantic.dev/latest/). It consists of a main spider that extracts detailed product data and an auxiliary spider that extracts product details URLs from a products collection page. In addition, a utility script is provided to convert JSON objects from the spider's output into a Python List of URLs suitable for the JSON config files.
 
 ## Table of Contents
 - #### [Main features](#main-features-1)
@@ -28,7 +28,7 @@ IDSide Scraper is a modular web scraping project built with [Scrapy](https://doc
 
 
 ## Main features
-* **Modular Configuration:** Use JSON configuration files (e.g. `idside-scraping/configs/config_example.json`) that are validated with `Pydantic`.
+* **Modular Configuration:** Use JSON configuration files (e.g. `smart-scraping/configs/config_example.json`) that are validated with `Pydantic`.
 
 * **Main spider:** The main scraper entry point. The `MainSpider` is the spider intended for scraping products datas. It is 'self-configurable' via the JSON configuration files.
 
@@ -38,9 +38,9 @@ IDSide Scraper is a modular web scraping project built with [Scrapy](https://doc
 
 * **Playwright Integration:** Use `Playwright` for JavaScript rendering and dynamic interactions with pages.
 
-* **Utility spider:** A dedicated spider (`idside-scraping/idside_scraper/idside_scraper/spiders/urls_spider.py`) to extract product details URLs from products collections pages.
+* **Utility spider:** A dedicated spider (`smart-scraping/smart_scraper/smart_scraper/spiders/urls_spider.py`) to extract product details URLs from products collections pages.
 
-* **Conversion Utility:** A script (`idside-scraping/configs/scripts/convert_urls.py`) that converts a list of JSON objects into a simple urls list that can be easily copied into a JSON configuration file (`"base_urls": [<url>, <url>, <url>,...]`).
+* **Conversion Utility:** A script (`smart-scraping/configs/scripts/convert_urls.py`) that converts a list of JSON objects into a simple urls list that can be easily copied into a JSON configuration file (`"base_urls": [<url>, <url>, <url>,...]`).
 
 * **Customizable:** Easily update selectors and settings via configuration files without touching the code.
 
@@ -48,7 +48,7 @@ IDSide Scraper is a modular web scraping project built with [Scrapy](https://doc
 
 ## Project Structure
 ```bash
-idside-scraping/
+smart-scraping/
 ├── configs/                       # JSON config files and utility scripts
 │   ├── scripts/
 │   │   └── convert_urls.py
@@ -56,8 +56,8 @@ idside-scraping/
 │   ├── config_anotherbrand.json
 │   ├── config_anotherbrand.json
 │   └── … (config_columbia.json, config_jonak.json, etc.)
-├── idside_scraper/                # Scrapy project
-│   ├── idside_scraper/
+├── smart_scraper/                # Scrapy project
+│   ├── smart_scraper/
 │   │   ├── __init__.py
 │   │   ├── items.py               # models, loader and helpers
 │   │   ├── middlewares.py
@@ -91,7 +91,7 @@ idside-scraping/
 ## Installation
 Clone the repository:
 ```bash
-git clone git@github.com:idside-eu/idside-scraping.git
+git clone git@github.com:Adrien89betty/smart-scraping.git
 ```
 
 Create and activate a Python virtual environment:
@@ -114,7 +114,7 @@ playwright install
 
 
 ## Configuration file overview
-The project uses JSON configuration files (`idside-scraping/configs/config_example.json`) that define:
+The project uses JSON configuration files (`smart-scraping/configs/config_example.json`) that define:
 
 * **Base URLs:** A list of product details page URLs to scrape.
 
@@ -182,7 +182,7 @@ An example configuration file structure (`config_columbia.json`) look like:
 
 ## Command lines
 ### Running the Main Spider
-The main spider (MainSpider) extracts detailed product data. To run it from terminal, use (from inside `idside_scraper` dir, if you are at the root, it wont works):
+The main spider (MainSpider) extracts detailed product data. To run it from terminal, use (from inside `smart_scraper` dir, if you are at the root, it wont works):
 
 ```bash
 scrapy crawl main_spider -a config_file=config_name.json -o outputs/name_output.json
@@ -195,12 +195,12 @@ The auxiliary `urls_spider.py` extracts product details URLs from a products col
 scrapy crawl urls_spider -o outputs/urls_output.json
 ```
 ### Converting JSON objects
-Use the `convert_urls.py` script to transform the JSON output from `urls_spider.py` into a "list of URLs" suitable for the JSON config files. From inside `idside_scraper` dir, run:
+Use the `convert_urls.py` script to transform the JSON output from `urls_spider.py` into a "list of URLs" suitable for the JSON config files. From inside `smart_scraper` dir, run:
 
 ```bash
 python ../configs/scripts/convert_urls.py outputs/urls_output.json outputs/converted_urls.json
 ```
-*This script reads `idside-scraping/idside_scraper/outputs/urls_output.json` file with objects containing* `detail_url` *and creates a new JSON file* (`idside-scraping/idside_scraper/outputs/converted_urls.json`) *with a single object that has a* `base_urls` *key containing a list of URLs.*
+*This script reads `smart-scraping/smart_scraper/outputs/urls_output.json` file with objects containing* `detail_url` *and creates a new JSON file* (`smart-scraping/smart_scraper/outputs/converted_urls.json`) *with a single object that has a* `base_urls` *key containing a list of URLs.*
 
 ### Scrapy console
 ```bash
@@ -237,7 +237,7 @@ Follow these steps to perform a scrape on a brand’s website (here, “Columbia
    ```
 
 ### 3. Create and set a new configuration file
-1. In `idside-scraping/configs/`, create a new JSON file (e.g. `config_columbia.json`).
+1. In `smart-scraping/configs/`, create a new JSON file (e.g. `config_columbia.json`).
 
 2. Open your `config_columbia.json` and adjust fields values (cf. [Set config file](#set-config-file)):
 
@@ -250,10 +250,10 @@ Run this command to test extraction on a few URLs *(replace 'name' for the real 
 ```bash
 scrapy crawl main_spider -a config_file=config_name.json -o outputs/name_output.json
 ```
-You’ll get a JSON output file (in `idside-scraping/idside_scraper/outputs/`) file with partial or complete data extracts. Ajust settings if it necessary.
+You’ll get a JSON output file (in `smart-scraping/smart_scraper/outputs/`) file with partial or complete data extracts. Ajust settings if it necessary.
 
 ### 5. Generate the product URLs list
-Open `idside-scraping/idside_scraper/idside_scraper/spiders/urls_spider.py` and replace `start_urls`value with your desired page URL:
+Open `smart-scraping/smart_scraper/smart_scraper/spiders/urls_spider.py` and replace `start_urls`value with your desired page URL:
 ```python
 # *=========*/URL of the product list page to scrape/*=========*
 start_urls = ["https://www.columbia.com/fr_fr/outlet/outlet-femmes?"]
@@ -273,14 +273,14 @@ Run:
 ```bash
 scrapy crawl urls_spider -o outputs/urls_output.json
 ```
-You'll get mutiple JSON objects in `idside-scraping/idside_scraper/outputs/urls_output.json` listing all individual product pages URLs.
+You'll get mutiple JSON objects in `smart-scraping/smart_scraper/outputs/urls_output.json` listing all individual product pages URLs.
 
 ### 6. Convert the JSON objects to a simple URL list
 run:
 ```bash
 python ../configs/scripts/convert_urls.py outputs/urls_output.json outputs/converted_urls.json
 ```
-This outputs in `idside-scraping/idside_scraper/outputs/converted_urls.json`, a simple list of URLs to copy in your JSON config file.
+This outputs in `smart-scraping/smart_scraper/outputs/converted_urls.json`, a simple list of URLs to copy in your JSON config file.
 
 ### 7. Update your JSON config file and rerun
 1. Paste the extracted URLs into the "start_urls" field of your config file. (e.g.`config_columbia.json`).
