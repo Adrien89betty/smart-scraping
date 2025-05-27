@@ -1,23 +1,13 @@
-# Scrapy settings for idside_scraper project
-#
-# For simplicity, this file contains only settings considered important or
-# commonly used. You can find more settings consulting the documentation:
-#
-#     https://docs.scrapy.org/en/latest/topics/settings.html
-#     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
+# Scrapy settings for smart_scraper project
 
 import logging
 import colorlog
 
-BOT_NAME = "idside_scraper"
+BOT_NAME = "smart_scraper"
 
-SPIDER_MODULES = ["idside_scraper.spiders"]
-NEWSPIDER_MODULE = "idside_scraper.spiders"
+SPIDER_MODULES = ["smart_scraper.spiders"]
+NEWSPIDER_MODULE = "smart_scraper.spiders"
 
-
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "idside_scraper (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
