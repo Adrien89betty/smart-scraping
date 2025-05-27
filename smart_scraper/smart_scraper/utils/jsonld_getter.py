@@ -1,6 +1,6 @@
 import json
 import requests
-from idside_scraper.items import clean_html_tags, clean_text
+from smart_scraper.items import clean_html_tags, clean_text
 from urllib.parse import urljoin
 from requests.exceptions import RequestException
 
